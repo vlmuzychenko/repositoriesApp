@@ -1,0 +1,72 @@
+@import "../../theme/palette";
+
+.login {
+  height: calc(100vh - 70px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form {
+  width: 400px;
+  height: 250px;
+  padding: 70px 80px;
+  background-color: $blue;
+  border-radius: 5px;
+  position: relative;
+  box-sizing: border-box;
+  overflow: hidden;
+  &__field {
+    width: 100%;
+    position: relative;
+    margin-top: 20px;
+    input {
+      display: block;
+      width: 100%;
+      background-color: transparent;
+      border-top: 0;
+      border-left: 0;
+      border-right: 0;
+      border-bottom: 3px solid $darkGrey;
+      font-size: 24px;
+      color: $darkGrey;
+      outline: none;
+      font-weight: 100;
+      position: relative;
+      z-index: 2;
+      &:focus ~ label,
+      &:valid ~ label {
+        transform: scale(.6);
+      }
+    }
+    label {
+      position: absolute;
+      top: 0;
+      font-size: 24px;
+      font-weight: 100;
+      color: $darkGrey;
+      z-index: 1;
+      transition: transform .3s;
+      transform-origin: 0 -150%;
+    }
+  }
+  &__button {
+    margin-top: 30px;
+    display: flex;
+    justify-content: flex-end;
+    a {
+      display: block;
+      text-decoration: none;
+      border-radius: 5px;
+      font-size: 21px;
+      line-height: 40px;
+      padding: 0px 25px;
+      background-color: $green;
+      color: #fff;
+      transition: background-color .3s;
+      &:hover {
+        background-color: #5ec2d2;
+      }
+    }
+  }
+}

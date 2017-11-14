@@ -1,0 +1,15 @@
+@import "../../theme/palette";
+
+.app {
+  min-height: 100vh;
+  color: $black;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.header {
+  height: 70px;
+  padding: 0 5%;
+  background-color: $grey;
+  display: flex;
+  align-items: center;
+}

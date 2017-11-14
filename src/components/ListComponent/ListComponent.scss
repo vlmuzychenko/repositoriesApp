@@ -1,0 +1,28 @@
+@import "../../theme/palette";
+
+.list {
+  min-height: calc(100vh - 70px);
+  width: 100%;
+  display: flex;
+  align-items: stretch;
+  &__items {
+    width: 40%;
+    background-color: $blue;
+    margin: 0;
+    box-sizing: border-box;
+    padding: 50px;
+    list-style: decimal;
+    li + li {
+      margin-top: 15px;
+    }
+  }
+  &__info {
+    width: 80%;
+    box-sizing: border-box;
+    padding: 50px 100px;
+  }
+}
+
+.active {
+  opacity: 1;
+}
