@@ -39,19 +39,3 @@ ReactDOM.render(
   <App />,
   document.getElementById('root')
 );
-
-// /src
-//   /components
-//     /LoginComponent -> LoginComponent.jsx + LoginComponent.css
-//     /Layout -> Layout.jsx + Layout.css
-//   /containers
-//     /LoginContainer -> LoginContainer.jsx
-//   /actions
-//     /user.js
-//     /list.js
-//   /reducers
-//     /user.js
-//     /list.js
-//     /index.js -> combine
-//   /index.js -> main
-//   /store.js
